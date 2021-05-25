@@ -1,0 +1,105 @@
+{
+  "main": {
+    "id": "4f46ab6c7b163048",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fd4d5e927010a62",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "output.md",
+            "mode": "source"
+          }
+        },
+        "group": "526be1ea615a19d4"
+      },
+      {
+        "id": "7ac5ba4b85dc1444",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "output.md",
+            "mode": "preview"
+          }
+        },
+        "group": "526be1ea615a19d4"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "01e5aaa9367327d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "022c118af5ae27c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0eccd6e3018d5760",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7458a17feaa58968",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b09247df417a36da",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3a86e01272c4bf3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e32272a78cc238b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "output.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "output.md",
+    "k6 vs. JMeter.md"
+  ]
+}
