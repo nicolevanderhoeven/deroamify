@@ -2,7 +2,7 @@ import re
 import os
 from dateutil.parser import parse
 
-path = '/Users/nic/Dropbox/DownloadMyBrain/dmb-obsidian/' #insert file path to your vault here
+path = 'PATH' #insert file path to your vault here
 
 ### Convert date format in file content
 

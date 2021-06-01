@@ -1,4 +1,6 @@
 # Opens files in directory, outputs firebase URLs to a file, downloads them, and replaces the links with a link to the new files.
+# To use, replace PATH in the variable vaultDir with your vault's root directory.
+# This automatically puts filenames in /assets - change the newFilePath variable if you want to change this
 
 import re
 import glob
@@ -7,8 +9,7 @@ import requests
 import calendar
 import time
 
-# vaultDir = '/Users/nic/Dropbox/DownloadMyBrain/dmb-obsidian'
-vaultDir = '/Users/nic/Downloads/temp'
+vaultDir = '/PATH'
 
 firebaseShort = 'none'
 fullRead = 'none'
@@ -42,7 +43,7 @@ for subdir, dirs, files in os.walk(vaultDir):
                     ext = '.' + reg.group(2) # .jpeg
                     # Create new local file out of downloaded firebase file
                     newFilePath = 'assets/' + str(timestamp) + '_' + str(i) + ext
-                    print(firebaseUrl + '>>>' + newFilePath)
+                    # print(firebaseUrl + '>>>' + newFilePath)
                     with open(vaultDir + '/' + newFilePath,'wb') as output_file:
                         output_file.write(r.content)
                 except AttributeError: # This is to prevent the AttributeError exception when no matches are returned

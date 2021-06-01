@@ -4,7 +4,7 @@ import re
 import glob
 import os
 
-vaultDir = '/Users/nic/Dropbox/DownloadMyBrain/dmb-obsidian/Workshop/'
+vaultDir = 'PATH'
 files = os.listdir(vaultDir)
 
 for file in files:
