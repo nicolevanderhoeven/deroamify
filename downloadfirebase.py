@@ -9,7 +9,7 @@ import requests
 import calendar
 import time
 
-vaultDir = '/PATH'
+vaultDir = '/Users/nic/Desktop/test2021'
 
 firebaseShort = 'none'
 fullRead = 'none'
@@ -41,6 +41,9 @@ for subdir, dirs, files in os.walk(vaultDir):
                     # Get file extension of file. Ex: .png; .jpeg
                     reg = re.search(r'(.*)\.(.+)', firebaseShort[-5:]) # a.png / .jpeg
                     ext = '.' + reg.group(2) # .jpeg
+                    # Create assets folder if it doesn't exist
+                    if not os.path.exists(vaultDir + '/assets'):
+                        os.makedirs(vaultDir + '/assets')
                     # Create new local file out of downloaded firebase file
                     newFilePath = 'assets/' + str(timestamp) + '_' + str(i) + ext
                     # print(firebaseUrl + '>>>' + newFilePath)
