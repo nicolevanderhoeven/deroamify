@@ -8,6 +8,7 @@ import os
 import requests
 import calendar
 import time
+from io import BytesIO
 
 vaultDir = '/Users/nic/Desktop/test2021'
 
@@ -48,7 +49,7 @@ for subdir, dirs, files in os.walk(vaultDir):
                     newFilePath = 'assets/' + str(timestamp) + '_' + str(i) + ext
                     # print(firebaseUrl + '>>>' + newFilePath)
                     with open(vaultDir + '/' + newFilePath,'wb') as output_file:
-                        output_file.write(r.content)
+                        shutil.copyfileobj(BytesIO(r.content), output_file)
                 except AttributeError: # This is to prevent the AttributeError exception when no matches are returned
                     continue
                 # Save Markdown file with new local file link as a temp file
