@@ -30,7 +30,7 @@ for subdir, dirs, files in os.walk(vaultDir):
             if 'firebasestorage' in line:
                 try:
                     # If it's a PDF, it will be in the format {{pdf: link}}
-                    if '{{pdf:' in line:
+                    if '{{pdf:' in line or '{{[[pdf]]:' in line:
                         link = re.search(r'https://firebasestorage(.*)\?alt(.*)\}', line)
                     else:
                         link = re.search(r'https://firebasestorage(.*)\?alt(.*)\)', line)
