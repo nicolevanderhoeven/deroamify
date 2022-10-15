@@ -9,6 +9,7 @@ import requests
 import calendar
 import time
 from io import BytesIO
+import shutil
 
 vaultDir = '/Users/nic/Desktop/test2021'
 
